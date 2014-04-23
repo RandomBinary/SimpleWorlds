@@ -1,0 +1,23 @@
+name: SimpleWorlds
+main: pl.rar.minecraft.simpleworlds.main
+version: 1.0
+commands:
+    newworld:
+        description: Creates a new world.
+        usage: /newworld <normal/nether/end> <name>
+    gotoworld:
+        description: Teleports to a world.
+        usage: /gotoworld <name>
+    unloadworld:
+        description: Prepares a world for deletion.
+        usage: /unloadworld <name>
+
+permissions:
+    SimpleWorlds.gotoworld:
+        default: op
+        
+    SimpleWorlds.newworld:
+        default: op
+        
+    SimpleWorlds.unloadworld:
+        default: op
